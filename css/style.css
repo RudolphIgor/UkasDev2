@@ -1763,8 +1763,7 @@ input:focus {
 
 .arrow-up {
   display: block;
-  width: 10px;
-  height: 10px;
-  background: #fff;
+  width: 35px;
+  height: 48px;
   margin-left: auto;
 }
