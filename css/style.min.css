@@ -1766,4 +1766,8 @@ input:focus {
   width: 35px;
   height: 48px;
   margin-left: auto;
+  cursor: pointer;
+}
+.arrow-up > .foot-arrow:hover {
+  border-bottom: none;
 }
