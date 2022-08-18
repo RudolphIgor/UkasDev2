@@ -1000,10 +1000,13 @@ input:focus {
 }
 .accordion__item {
   cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 13px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
   border-top: 1px solid #000;
   padding: 12px 0;
   overflow: hidden;
@@ -1025,6 +1028,11 @@ input:focus {
   .accordion__item {
     padding-bottom: 40px;
   }
+}
+.accordion__item.active {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .accordion__item.active .content {
   visibility: visible;
@@ -1057,6 +1065,7 @@ input:focus {
   font-weight: 600;
   font-size: 18px;
   padding-right: 10px;
+  margin: 0;
 }
 @media (max-width: 768px) {
   .accordion__item > .title {
@@ -1586,6 +1595,9 @@ input:focus {
   margin: 0px 0px 20px 0px;
   color: #d4d4d4;
 }
+.contacts-container > .contacts-card > a:hover {
+  color: #BFC8C7;
+}
 @media (max-width: 576px) {
   .contacts-container > .contacts-card > a {
     margin: 0px 0px 10px 0px;
@@ -1785,6 +1797,9 @@ input:focus {
 }
 .footer-content > .block-footer > .center > a {
   color: #fff;
+}
+.footer-content > .block-footer > .center > a:hover {
+  color: #BFC8C7;
 }
 .footer-content > .block-footer > .center > a:not(:last-child) {
   margin: 0px 0px 25px 0px;
