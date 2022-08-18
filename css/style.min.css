@@ -1065,11 +1065,16 @@ input:focus {
   font-weight: 600;
   font-size: 18px;
   padding-right: 10px;
-  margin: 0;
+  margin: 10px auto 0px 0px;
 }
 @media (max-width: 768px) {
   .accordion__item > .title {
     margin-bottom: 28px;
+  }
+}
+@media (max-width: 576) {
+  .accordion__item > .title {
+    font-size: 18px;
   }
 }
 .accordion__item > .content {
