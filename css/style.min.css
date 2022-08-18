@@ -537,6 +537,13 @@ input:focus {
 @media (max-width: 576px) {
   .child2 {
     min-width: 88%;
+    border-radius: 0 0 100px 100px;
+    height: 575px;
+  }
+}
+@media (max-width: 450px) {
+  .child2 {
+    min-width: 88%;
     border-radius: 0 0 30px 30px;
     height: 575px;
   }
@@ -555,6 +562,7 @@ input:focus {
 .child2 > img {
   display: block;
   height: 134.5%;
+  image-rendering: crisp-edges;
   position: absolute;
   left: -96px;
   top: -139px;
@@ -578,19 +586,26 @@ input:focus {
 @media (max-width: 992px) {
   .child2 > img {
     height: 110%;
-    left: -462px;
-    top: -11px;
+    left: -291px;
+    top: -34px;
   }
 }
 @media (max-width: 768px) {
   .child2 > img {
-    left: -646px;
-    top: -3px;
+    left: -462px;
+    top: -38px;
   }
 }
 @media (max-width: 576px) {
   .child2 > img {
-    left: -603px;
+    left: -503px;
+    height: 100%;
+    top: 0px;
+  }
+}
+@media (max-width: 360px) {
+  .child2 > img {
+    left: -577px;
     height: 100%;
     top: 0px;
   }
@@ -791,7 +806,7 @@ input:focus {
 @media (max-width: 768px) {
   .offer__arrow {
     top: -141px;
-    left: -464px;
+    left: -492px;
   }
 }
 @media (max-width: 576px) {
@@ -1287,6 +1302,25 @@ input:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+}
+.form-decore > .form-body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/loading.gif") center/50px no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.form-decore > .form-body.sending::after {
+  opacity: 1;
+  visibility: visible;
 }
 .form-decore > .form-body > h3:nth-child(1) {
   -webkit-box-ordinal-group: 2;
@@ -1491,6 +1525,10 @@ input:focus {
 }
 .form-decore > .form-body > .input-wrapper > .accept > a {
   color: #00526B;
+}
+
+.form-input.error {
+  border-bottom: 1px solid red;
 }
 
 .map {
